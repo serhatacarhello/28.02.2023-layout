@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+
+/* General Stayles */
+html {
+  scroll-behavior: smooth;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.marginBottom20 {
+    margin-bottom: 20px;
+}
+
+/* header */
+.header {
+  width: 100%;
+  height: 75px;
+  background-color: rgb(0, 0, 0);
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoContainer {
+  width: 75px;
+  height: 75px;
+}
+
+.logo {
+  width: 100%;
+  border-radius: 50% 20% / 10% 40%;
+  transition: all 1s .5s ease-in-out ;
+}
+.logo:hover {
+  transform: rotate(360deg);
+}
+
+nav a {
+  color: white;
+}
+
+nav a:any-link {
+  color: rgb(236, 150, 150);
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: rgb(106, 243, 243);
+}
+
+nav a:active {
+  color: blueviolet;
+}
+nav ul {
+  display: flex;
+  gap: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn {
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: rgb(49%, 49%, 100%);
+  color: white;
+}
+
+.btn-secondary {
+  background-color: white;
+}
+.headerBtnContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+/* main */
+.mainContainer {
+    position: relative;
+  width: 100%;
+  height: calc(100vh - 155px);
+  overflow-y: scroll;
+  display: flex;
+  margin-top: 30px;
+  padding: 5px;
+  gap: 5px;
+}
+
+.sideContainer {
+  min-height: 3rem;
+  flex: 1;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 0 black;
+  height: calc(100vh - 155px);
+}
+
+.sideContainer ul {
+  width: 100%;
+}
+
+.sideContainer ul li {
+  display: block;
+  padding: 10px 0;
+  padding-left: 10px;
+  border-bottom: 1px solid rgb(99, 92, 92);
+}
+
+.sideContainer ul li:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+}
+
+
+.sideContainer ul li:hover {
+  background-color: rgb(99, 92, 92);
+  color: white;
+}
+
+main {
+  border-radius: 5px;
+ height: fit-content;
+  flex: 3;
+  padding: 10px;
+  box-shadow: 0 0 2px 0 rgb(85, 85, 85);
+ display: flex;
+ flex-flow: column nowrap;
+
+}
+
+.blogContainer {
+    width: 100%;
+    height: 300px;
+    border: 1px solid;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgb(92, 91, 91);
+}
+
+.blogLeft {    
+    flex: 1;  
+}
+
+.blogRight {
+    flex: 1;
+    padding: 20px 10px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+.blog1 {
+    background-color: aliceblue;
+    background: url(images/n.jpeg) no-repeat center;
+    background-size: cover;
+}
+
+.blog2 {
+    background-color: aliceblue;
+    background: url(images/n2.jpeg) no-repeat center;
+    background-size: cover;
+}
+
+.blog3 {
+    background-color: aliceblue;
+    background: url(images/n3.jpeg) no-repeat center;
+    background-size: cover;
+}
+
+.blog4 {
+    background-color: aliceblue;
+    background: url(images/nature.jpeg) no-repeat center;
+    background-size: cover;
+}
+
+.blogContainer a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.blogContainer a:hover {
+  background-color: aqua;
+}
+
+.top {
+    position: absolute;
+   bottom: 100px;
+   right: 50px;
+   border: 1px solid;
+   width: 50px;
+   height: 50px;
+   background-color: aqua;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   box-shadow: 0 5px 10px 0 rgb(51, 52, 51);
+}
+
+.top span i {
+ font-size: 1rem;
+display: inline-block;
+color: wheat;
+background-color: inherit;
+}
+
+.top:hover {
+  background-color: aqua;
+  color: white;
+}
+
+.footer {
+  background-color: black;
+  height: 50px;
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer small {
+  color: white;
+}
